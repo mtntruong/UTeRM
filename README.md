@@ -1,8 +1,8 @@
 # UTeRM
 Source code and data for the paper  
-Deep Unfolding Tensor Rank Minimization with Generalized Detail Injection for Pansharpening  
+Deep Unfolding Tensor Rank Minimization With Generalized Detail Injection for Pansharpening  
 Truong Thanh Nhat Mai, Edmund Y. Lam, and Chul Lee  
-IEEE Transactions on Geoscience and Remote Sensing, 2024  
+IEEE Transactions on Geoscience and Remote Sensing, vol. 62, pp. 1-18, 2024, Art no. 5405218  
 https://doi.org/10.1109/TGRS.2024.3392215
 
 # Source code
@@ -41,11 +41,11 @@ If our research or dataset are useful for your research, please kindly cite our 
 @article{Mai2024,
     author={Mai, Truong Thanh Nhat and Lam, Edmund Y. and Lee, Chul},
     journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-    title={Deep Unfolding Tensor Rank Minimization with Generalized Detail Injection for Pansharpening}, 
+    title={Deep Unfolding Tensor Rank Minimization With Generalized Detail Injection for Pansharpening}, 
     year={2024},
-    volume={},
+    volume={62},
     number={},
-    pages={1-1},
+    pages={1-18},
     doi={10.1109/TGRS.2024.3392215}
 }
 ```
