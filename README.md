@@ -13,8 +13,6 @@ We first upload the implementations of the deep unfolded networks and testing co
 
 Please note that the proposed UTeRM needs data augmentation to achieve the reported performance (we also used the same data augmentation procedure for all deep networks in the experiments to ensure fair comparisons).
 
-We will upload the training codes used in the paper soon. They are being refactored.
-
 ## Required Python packages
 Even though the deep unfolded networks only need Pytorch to run, the training/testing scripts require some external libraries. Please use `env.yml` to create an environment in [Anaconda](https://www.anaconda.com)
 ```
@@ -26,8 +24,15 @@ conda activate uterm
 ```
 If you want to change the environment name, edit the first line of `env.yml` before creating the environment.
 
+## Data Preparation
+Please download the raw data from [here](https://github.com/Lihui-Chen/Awesome-Pansharpening#Datasets) then run the MATLAB script `Data-Preparation/H5_Data_Gen.m` to create an H5 file containing preprocessed and augmented data. Please note that all learning-based competing algorithms in the paper use this offline-augmented data for training.
+
 ## Training
-\*\*\* being prepared \*\*\*
+The following script performs the training procedure described in the paper
+```
+python train.py --arch UTeRM_CNN --data ./msi_data/IKONOS_train.h5 && python train.py --arch UTeRM_CNN --data ./msi_data/IKONOS_train.h5 --finetune --resume=./ckpts/epoch_90.pth --set_lr=1e-6
+```
+The data file `./msi_data/IKONOS_train.h5` serves as an example of the generated H5 file described above.
 
 ## Testing
 Reduced-resolution test
