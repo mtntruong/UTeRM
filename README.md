@@ -7,14 +7,15 @@ https://doi.org/10.1109/TGRS.2024.3392215
 
 For PDF, please visit https://mtntruong.github.io/
 
+If you have any questions, please open an issue.  
+
 # Source code
-The proposed algorithm is implemented in Python using PyTorch.  
-We first upload the implementations of the deep unfolded networks and testing codes. Since the networks do not require any special Python library other than Pytorch, you can easily plug them into your training code to train with your own dataset. Please see the toy example in the `main` function in each file.
+The proposed algorithm is implemented in Python using PyTorch. Since the networks do not require any special Python libraries other than Pytorch, you can easily plug them into your training code to train with your own dataset. Please see the toy example in the `main` function in each file.
 
 Please note that the proposed UTeRM needs data augmentation to achieve the reported performance (we also used the same data augmentation procedure for all deep networks in the experiments to ensure fair comparisons).
 
 ## Required Python packages
-Even though the deep unfolded networks only need Pytorch to run, the training/testing scripts require some external libraries. Please use `env.yml` to create an environment in [Anaconda](https://www.anaconda.com)
+Even though the deep unfolded networks only need Pytorch to run, the training/testing scripts require some external libraries. Please use `env.yml` to create an environment with [Anaconda](https://www.anaconda.com)
 ```
 conda env create -f env.yml
 ```
